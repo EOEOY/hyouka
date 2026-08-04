@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_curious",
+  "name": "我很好奇！",
+  "description": "千反田的招牌台词。被她盯着的人，会不由自主说出不该说的话。",
+  "mechanics": "询问检定强制获得一条隐藏证言或线索；但会吸引当事人注意，交际检定 DC +2。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}

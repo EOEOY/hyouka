@@ -1,0 +1,46 @@
+{
+  "id": "hyouka_houtarou",
+  "character_name": "折木奉太郎",
+  "race": "高中生",
+  "class": "节能侦探",
+  "description": "『没必要做的事不做，不得不做的事尽快做。』节能主义的人生信条，在千反田的『我很好奇！』面前不堪一击。观察力一流，推理起来就停不下来。",
+  "attributes": {
+    "obs": 17,
+    "mem": 13,
+    "log": 16,
+    "kno": 12,
+    "gut": 11,
+    "act": 8
+  },
+  "skills": [
+    {
+      "name": "观察",
+      "value": 5
+    },
+    {
+      "name": "推理",
+      "value": 4
+    },
+    {
+      "name": "整理",
+      "value": 2
+    }
+  ],
+  "background": "折木本来只想平静度过高中三年。直到四月，一个叫千反田的女生抓住他的袖子，眼睛发亮：『我很好奇！』从此，古典部的旧杂志、广播室的怪声、文化祭的预告信，一件件找上门来。他嘴上说着麻烦，却每次都比别人先一步看到真相。",
+  "equipment": [
+    {
+      "name": "旧笔记本"
+    },
+    {
+      "name": "自行车"
+    },
+    {
+      "name": "零花钱"
+    }
+  ],
+  "gold": 300,
+  "progress": 0,
+  "days": 5,
+  "rule_id": "hyouka_rule",
+  "world_id": "hyouka_world"
+}

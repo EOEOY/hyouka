@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_class_energy",
+  "name": "节能侦探",
+  "description": "以最少气力看穿最多真相的观察者。嘴上说着麻烦，推理却停不下来。",
+  "mechanics": "观察与推理专精；每天额外获得 1 个行动点；节能主义特技强化。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}

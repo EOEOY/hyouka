@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_energy_saving",
+  "name": "节能主义",
+  "description": "折木的看家本领：用最少的气力做到最多的事。跳过繁琐的整理，直接看到关键。",
+  "mechanics": "推理检定可跳过『整理思路』步骤，节省一个行动点；但跳过整理时推理 DC +2。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}

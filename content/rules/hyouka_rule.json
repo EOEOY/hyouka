@@ -1,0 +1,97 @@
+{
+  "rule_id": "hyouka_rule",
+  "rule_name": "古典部推理手册",
+  "description": "日常推理规则：推理靠脑力，骰子只决定信息获取。观察、询问、记忆检定决定你能拿到多少线索；把线索拼成假设是玩家自己的事。限时内解出谜团，就是古典部的胜利。",
+  "dice_system": "d20",
+  "combat_model": "hp_based",
+  "mechanics": "信息获取检定：d20 + 属性修正 + 技能加值 vs DC（观察现场/询问证言/记忆旧事）。推理本身不掷骰：玩家提出假设，GM 依据已收集线索判断正误。正确假设或识破谎言推进谜团进度；错误假设记入笔记（误导槽），需花行动点推翻。限时天数内谜团进度满 100 即真相揭示。",
+  "attribute_points": 72,
+  "max_skills": 6,
+  "skill_point_total": 18,
+  "currency": "零花钱",
+  "hp_formula": "8 + act * 2",
+  "attributes": [
+    {
+      "key": "obs",
+      "name": "观察力",
+      "min": 3,
+      "max": 18
+    },
+    {
+      "key": "mem",
+      "name": "记忆力",
+      "min": 3,
+      "max": 18
+    },
+    {
+      "key": "log",
+      "name": "逻辑",
+      "min": 3,
+      "max": 18
+    },
+    {
+      "key": "kno",
+      "name": "知识",
+      "min": 3,
+      "max": 18
+    },
+    {
+      "key": "gut",
+      "name": "直觉",
+      "min": 3,
+      "max": 18
+    },
+    {
+      "key": "act",
+      "name": "行动力",
+      "min": 3,
+      "max": 18
+    }
+  ],
+  "special_stats": [
+    {
+      "key": "progress",
+      "name": "谜团进度",
+      "max": 100,
+      "description": "正确假设、识破谎言、关键证言会推进谜团进度。满 100 触发真相揭示——真相揭晓时，把收集到的线索逐条回放，就是古典部的完美谢幕。"
+    },
+    {
+      "key": "days",
+      "name": "剩余天数",
+      "max": 7,
+      "description": "每个谜题的限时。每天可执行两个行动（调查/询问/整理/推理）；天数耗尽仍未解出谜团，事件落幕，留下未解之谜。"
+    }
+  ],
+  "skills": [
+    {
+      "key": "observe",
+      "name": "观察",
+      "value": 0
+    },
+    {
+      "key": "question",
+      "name": "询问",
+      "value": 0
+    },
+    {
+      "key": "reason",
+      "name": "推理",
+      "value": 0
+    },
+    {
+      "key": "organize",
+      "name": "整理",
+      "value": 0
+    },
+    {
+      "key": "investigate",
+      "name": "调查",
+      "value": 0
+    },
+    {
+      "key": "socialize",
+      "name": "交际",
+      "value": 0
+    }
+  ]
+}

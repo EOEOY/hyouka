@@ -1,0 +1,46 @@
+{
+  "id": "hyouka_satoshi",
+  "character_name": "福部里志",
+  "race": "高中生",
+  "class": "知识库",
+  "description": "自称数据库的百科全书，熟知校内一切八卦与历史。口头禅『数据库是得不出结论的』——他收集信息，却拒绝下判断。",
+  "attributes": {
+    "obs": 12,
+    "mem": 17,
+    "log": 13,
+    "kno": 17,
+    "gut": 9,
+    "act": 11
+  },
+  "skills": [
+    {
+      "name": "调查",
+      "value": 4
+    },
+    {
+      "name": "整理",
+      "value": 4
+    },
+    {
+      "name": "观察",
+      "value": 2
+    }
+  ],
+  "background": "里志的笔记本里装着全校的秘密：谁在哪个社团、谁去年拿过什么奖、旧杂志库里积了多少灰尘。他乐于提供情报，却总在推理的门槛前停下——『数据库是得不出结论的』。也许他害怕的从来不是推理，而是结论本身。",
+  "equipment": [
+    {
+      "name": "情报笔记本"
+    },
+    {
+      "name": "自行车"
+    },
+    {
+      "name": "随身听"
+    }
+  ],
+  "gold": 200,
+  "progress": 0,
+  "days": 5,
+  "rule_id": "hyouka_rule",
+  "world_id": "hyouka_world"
+}

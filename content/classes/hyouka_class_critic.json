@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_class_critic",
+  "name": "毒舌监督",
+  "description": "古典部的刹车片。负责把跑偏的推理拉回正轨，把藏起来的矛盾揪出来。",
+  "mechanics": "推理与交际专精；识破谎言检定获得加成；可质疑一次错误假设直接推翻。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}

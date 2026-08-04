@@ -1,0 +1,46 @@
+{
+  "id": "hyouka_eru",
+  "character_name": "千反田爱瑠",
+  "race": "高中生",
+  "class": "好奇推手",
+  "description": "名门千金，成绩优异，好奇心强到能淹死人。『我很好奇！』是古典部接案子的唯一动力——被她盯上的谜题，没有人能拒绝。",
+  "attributes": {
+    "obs": 15,
+    "mem": 12,
+    "log": 11,
+    "kno": 14,
+    "gut": 17,
+    "act": 13
+  },
+  "skills": [
+    {
+      "name": "询问",
+      "value": 5
+    },
+    {
+      "name": "交际",
+      "value": 3
+    },
+    {
+      "name": "调查",
+      "value": 2
+    }
+  ],
+  "background": "千反田是名门千金，本可以过着大小姐的生活。但她对『未知』毫无抵抗力：三十三年前古典部发生了什么？广播室为什么传出已毕业之人的声音？她拉着折木一个个解下去——对她来说，谜题的答案远没有解谜的过程重要。",
+  "equipment": [
+    {
+      "name": "手账"
+    },
+    {
+      "name": "茶具"
+    },
+    {
+      "name": "家族便当"
+    }
+  ],
+  "gold": 500,
+  "progress": 0,
+  "days": 5,
+  "rule_id": "hyouka_rule",
+  "world_id": "hyouka_world"
+}

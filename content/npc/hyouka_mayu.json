@@ -1,0 +1,13 @@
+{
+  "id": "hyouka_mayu",
+  "name": "本乡真由",
+  "description": "电影研究会脚本担当。她写的剧本精确预言了现实——但她本人记不清自己写过什么：『剧本不是我写的……大概。』",
+  "keywords": [
+    "本乡",
+    "真由",
+    "脚本",
+    "预言"
+  ],
+  "world_id": "hyouka_world",
+  "tier": "core"
+}

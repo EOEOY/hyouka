@@ -1,0 +1,46 @@
+{
+  "id": "hyouka_mayaka",
+  "character_name": "伊原摩耶花",
+  "race": "高中生",
+  "class": "毒舌监督",
+  "description": "古典部唯一正常思考的人。美术部成员，毒舌但认真，负责把跑偏的推理拉回正轨。她比任何人都相信古典部能解开谜题。",
+  "attributes": {
+    "obs": 13,
+    "mem": 14,
+    "log": 16,
+    "kno": 13,
+    "gut": 10,
+    "act": 14
+  },
+  "skills": [
+    {
+      "name": "推理",
+      "value": 4
+    },
+    {
+      "name": "整理",
+      "value": 3
+    },
+    {
+      "name": "交际",
+      "value": 3
+    }
+  ],
+  "background": "摩耶花是美术部的王牌，却总被古典部拖进奇奇怪怪的谜题。她毒舌，是因为认真：折木偷懒她要管，里志跑题她要拉，千反田上头她要刹车。她知道真相往往残酷——但她还是希望古典部能找到答案。",
+  "equipment": [
+    {
+      "name": "素描本"
+    },
+    {
+      "name": "自动铅笔"
+    },
+    {
+      "name": "社团经费账本"
+    }
+  ],
+  "gold": 150,
+  "progress": 0,
+  "days": 5,
+  "rule_id": "hyouka_rule",
+  "world_id": "hyouka_world"
+}

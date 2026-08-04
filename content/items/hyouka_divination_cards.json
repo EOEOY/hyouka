@@ -1,0 +1,12 @@
+{
+  "id": "hyouka_divination_cards",
+  "name": "占卜牌",
+  "description": "占卜研究会特制的牌组，牌背图案每一张都一模一样——除了被人做过记号的几张。作弊的痕迹不在牌面，在提问方式。",
+  "effect": "占卜作弊事件的物证；观察检定可发现牌背的细微记号。",
+  "keywords": [
+    "占卜",
+    "牌",
+    "作弊"
+  ],
+  "world_id": "hyouka_world"
+}

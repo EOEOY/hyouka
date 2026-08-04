@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_class_database",
+  "name": "知识库",
+  "description": "移动的百科全书。收集信息，拒绝下判断——直到不得不下。",
+  "mechanics": "调查与整理专精；检索信息时 DC 降低；可保存额外一条线索笔记。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}

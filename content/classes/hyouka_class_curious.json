@@ -1,0 +1,9 @@
+{
+  "id": "hyouka_class_curious",
+  "name": "好奇推手",
+  "description": "被好奇心支配的推进器。她负责让谜题开始，也负责让谜题结束。",
+  "mechanics": "询问与交际专精；提问时更容易触发隐藏线索；『我很好奇！』特技强化。",
+  "rules": [
+    "hyouka_rule"
+  ]
+}
