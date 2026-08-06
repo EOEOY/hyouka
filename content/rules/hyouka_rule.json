@@ -93,5 +93,68 @@
       "name": "交际",
       "value": 0
     }
-  ]
+  ],
+  "intents": {
+    "defaults": {
+      "applies_to_dice_systems": ["d20"],
+      "zh_match": "substring",
+      "en_match": "word",
+      "case_sensitive": false,
+      "prefer_longest": true
+    },
+    "observe": {
+      "aliases": {
+        "zh-CN": ["观察", "观察现场", "查看", "察看", "细看", "环顾", "打量", "注意细节", "发现线索", "查看现场", "勘察"],
+        "en": ["observe", "observe the scene", "inspect", "look closely", "look around", "scan", "notice details"]
+      },
+      "skill_candidates": {"zh-CN": ["观察"], "en": ["observe"]},
+      "default_attribute": "obs",
+      "priority": 10
+    },
+    "question": {
+      "aliases": {
+        "zh-CN": ["询问", "询问证人", "打听", "问话", "盘问", "套话", "问证人", "询问目击者", "打听消息", "问出线索"],
+        "en": ["question", "ask", "question the witness", "interrogate", "inquire", "ask around"]
+      },
+      "skill_candidates": {"zh-CN": ["询问"], "en": ["question"]},
+      "default_attribute": "gut",
+      "priority": 10
+    },
+    "reason": {
+      "aliases": {
+        "zh-CN": ["推理", "推断", "推测", "我明白了", "想通了", "整理思路", "推导", "得出结论", "假设", "猜想"],
+        "en": ["reason", "deduce", "infer", "figure out", "conclude", "hypothesize", "theorize"]
+      },
+      "skill_candidates": {"zh-CN": ["推理"], "en": ["reason"]},
+      "default_attribute": "log",
+      "priority": 10
+    },
+    "organize": {
+      "aliases": {
+        "zh-CN": ["整理", "整理线索", "梳理", "归整", "拼接线索", "整合信息", "理清", "整理情报", "复盘"],
+        "en": ["organize", "organize clues", "sort", "compile", "piece together", "review"]
+      },
+      "skill_candidates": {"zh-CN": ["整理"], "en": ["organize"]},
+      "default_attribute": "mem",
+      "priority": 10
+    },
+    "investigate": {
+      "aliases": {
+        "zh-CN": ["调查", "搜查", "翻找", "搜索", "勘查", "搜证", "调查现场", "搜房间", "找证据", "翻查"],
+        "en": ["investigate", "search", "rummage", "look for evidence", "search the room", "examine"]
+      },
+      "skill_candidates": {"zh-CN": ["调查"], "en": ["investigate"]},
+      "default_attribute": "kno",
+      "priority": 10
+    },
+    "socialize": {
+      "aliases": {
+        "zh-CN": ["交际", "套近乎", "闲聊", "交谈", "搭话", "结识", "拉近关系", "打听", "交际"],
+        "en": ["socialize", "chat", "mingle", "talk to", "befriend", "get to know"]
+      },
+      "skill_candidates": {"zh-CN": ["交际"], "en": ["socialize"]},
+      "default_attribute": "gut",
+      "priority": 10
+    }
+  }
 }
