@@ -1,16 +1,38 @@
 {
   "rule_id": "hyouka_rule",
+  "rule_schema_version": 2,
+  "locale_schema_version": 1,
+  "default_locale": "zh-CN",
   "rule_name": "古典部推理手册",
   "description": "日常推理规则：推理靠脑力，骰子只决定信息获取。观察、询问、记忆检定决定你能拿到多少线索；把线索拼成假设是玩家自己的事。限时内解出谜团，就是古典部的胜利。",
   "dice_system": "d20",
   "combat_model": "hp_based",
+  "check_mechanic": {
+    "dice": "d20",
+    "comparison": "roll_plus_modifier_gte_target",
+    "critical": {
+      "success": 20,
+      "failure": 1
+    },
+    "advantage": {
+      "type": "d20_keep_high_low",
+      "allow_explicit": true,
+      "assistance_grants": "advantage"
+    }
+  },
+  "max_check_dc": 20,
   "mechanics": "信息获取检定：d20 + 属性修正 + 技能加值 vs DC（观察现场/询问证言/记忆旧事）。推理本身不掷骰：玩家提出假设，GM 依据已收集线索判断正误。正确假设或识破谎言推进谜团进度；错误假设记入笔记（误导槽），需花行动点推翻。限时天数内谜团进度满 100 即真相揭示。",
   "attribute_points": 72,
   "max_skills": 6,
   "skill_point_total": 200,
   "max_skill_value": 80,
   "skill_mode": "narrative",
-  "skill_value_to_bonus": {"20": 1, "40": 2, "60": 3, "80": 4},
+  "skill_value_to_bonus": {
+    "20": 1,
+    "40": 2,
+    "60": 3,
+    "80": 4
+  },
   "currency": "零花钱",
   "hp_formula": "8 + act * 2",
   "attributes": [
@@ -57,7 +79,12 @@
       "name": "谜团进度",
       "max": 100,
       "initial": 0,
-      "triggers": [{"at": 100, "notify": "谜团进度满 100：触发真相揭示--回放收集到的线索，古典部的完美谢幕"}],
+      "triggers": [
+        {
+          "at": 100,
+          "notify": "谜团进度满 100：触发真相揭示--回放收集到的线索，古典部的完美谢幕"
+        }
+      ],
       "description": "正确假设、识破谎言、关键证言会推进谜团进度。满 100 触发真相揭示——真相揭晓时，把收集到的线索逐条回放，就是古典部的完美谢幕。"
     },
     {
@@ -65,7 +92,13 @@
       "name": "剩余天数",
       "max": 7,
       "initial": 7,
-      "triggers": [{"at": 0, "direction": "down", "notify": "剩余天数耗尽：谜团落幕，保留未解之谜"}],
+      "triggers": [
+        {
+          "at": 0,
+          "direction": "down",
+          "notify": "剩余天数耗尽：谜团落幕，保留未解之谜"
+        }
+      ],
       "description": "每个谜题的限时。每天可执行两个行动（调查/询问/整理/推理）；天数耗尽仍未解出谜团，事件落幕，留下未解之谜。"
     }
   ],
@@ -103,7 +136,9 @@
   ],
   "intents": {
     "defaults": {
-      "applies_to_dice_systems": ["d20"],
+      "applies_to_dice_systems": [
+        "d20"
+      ],
       "zh_match": "substring",
       "en_match": "word",
       "case_sensitive": false,
@@ -111,55 +146,206 @@
     },
     "observe": {
       "aliases": {
-        "zh-CN": ["观察", "观察现场", "查看", "察看", "细看", "环顾", "打量", "注意细节", "发现线索", "查看现场", "勘察"],
-        "en": ["observe", "observe the scene", "inspect", "look closely", "look around", "scan", "notice details"]
+        "zh-CN": [
+          "观察",
+          "观察现场",
+          "查看",
+          "察看",
+          "细看",
+          "环顾",
+          "打量",
+          "注意细节",
+          "发现线索",
+          "查看现场",
+          "勘察"
+        ],
+        "en": [
+          "observe",
+          "observe the scene",
+          "inspect",
+          "look closely",
+          "look around",
+          "scan",
+          "notice details"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["观察"], "en": ["observe"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "观察"
+        ],
+        "en": [
+          "observe"
+        ]
+      },
       "default_attribute": "obs",
       "priority": 10
     },
     "question": {
       "aliases": {
-        "zh-CN": ["询问", "询问证人", "打听", "问话", "盘问", "套话", "问证人", "询问目击者", "打听消息", "问出线索"],
-        "en": ["question", "ask", "question the witness", "interrogate", "inquire", "ask around"]
+        "zh-CN": [
+          "询问",
+          "询问证人",
+          "打听",
+          "问话",
+          "盘问",
+          "套话",
+          "问证人",
+          "询问目击者",
+          "打听消息",
+          "问出线索"
+        ],
+        "en": [
+          "question",
+          "ask",
+          "question the witness",
+          "interrogate",
+          "inquire",
+          "ask around"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["询问"], "en": ["question"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "询问"
+        ],
+        "en": [
+          "question"
+        ]
+      },
       "default_attribute": "gut",
       "priority": 10
     },
     "reason": {
       "aliases": {
-        "zh-CN": ["推理", "推断", "推测", "我明白了", "想通了", "整理思路", "推导", "得出结论", "假设", "猜想"],
-        "en": ["reason", "deduce", "infer", "figure out", "conclude", "hypothesize", "theorize"]
+        "zh-CN": [
+          "推理",
+          "推断",
+          "推测",
+          "我明白了",
+          "想通了",
+          "整理思路",
+          "推导",
+          "得出结论",
+          "假设",
+          "猜想"
+        ],
+        "en": [
+          "reason",
+          "deduce",
+          "infer",
+          "figure out",
+          "conclude",
+          "hypothesize",
+          "theorize"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["推理"], "en": ["reason"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "推理"
+        ],
+        "en": [
+          "reason"
+        ]
+      },
       "default_attribute": "log",
       "priority": 10
     },
     "organize": {
       "aliases": {
-        "zh-CN": ["整理", "整理线索", "梳理", "归整", "拼接线索", "整合信息", "理清", "整理情报", "复盘"],
-        "en": ["organize", "organize clues", "sort", "compile", "piece together", "review"]
+        "zh-CN": [
+          "整理",
+          "整理线索",
+          "梳理",
+          "归整",
+          "拼接线索",
+          "整合信息",
+          "理清",
+          "整理情报",
+          "复盘"
+        ],
+        "en": [
+          "organize",
+          "organize clues",
+          "sort",
+          "compile",
+          "piece together",
+          "review"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["整理"], "en": ["organize"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "整理"
+        ],
+        "en": [
+          "organize"
+        ]
+      },
       "default_attribute": "mem",
       "priority": 10
     },
     "investigate": {
       "aliases": {
-        "zh-CN": ["调查", "搜查", "翻找", "搜索", "勘查", "搜证", "调查现场", "搜房间", "找证据", "翻查"],
-        "en": ["investigate", "search", "rummage", "look for evidence", "search the room", "examine"]
+        "zh-CN": [
+          "调查",
+          "搜查",
+          "翻找",
+          "搜索",
+          "勘查",
+          "搜证",
+          "调查现场",
+          "搜房间",
+          "找证据",
+          "翻查"
+        ],
+        "en": [
+          "investigate",
+          "search",
+          "rummage",
+          "look for evidence",
+          "search the room",
+          "examine"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["调查"], "en": ["investigate"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "调查"
+        ],
+        "en": [
+          "investigate"
+        ]
+      },
       "default_attribute": "kno",
       "priority": 10
     },
     "socialize": {
       "aliases": {
-        "zh-CN": ["交际", "套近乎", "闲聊", "交谈", "搭话", "结识", "拉近关系", "打听", "交际"],
-        "en": ["socialize", "chat", "mingle", "talk to", "befriend", "get to know"]
+        "zh-CN": [
+          "交际",
+          "套近乎",
+          "闲聊",
+          "交谈",
+          "搭话",
+          "结识",
+          "拉近关系",
+          "打听",
+          "交际"
+        ],
+        "en": [
+          "socialize",
+          "chat",
+          "mingle",
+          "talk to",
+          "befriend",
+          "get to know"
+        ]
       },
-      "skill_candidates": {"zh-CN": ["交际"], "en": ["socialize"]},
+      "skill_candidates": {
+        "zh-CN": [
+          "交际"
+        ],
+        "en": [
+          "socialize"
+        ]
+      },
       "default_attribute": "gut",
       "priority": 10
     }

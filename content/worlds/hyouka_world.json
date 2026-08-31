@@ -1,5 +1,8 @@
 {
   "world_id": "hyouka_world",
+  "world_schema_version": 2,
+  "locale_schema_version": 1,
+  "default_locale": "zh-CN",
   "world_name": "神山高中·古典部",
   "description": "平成年代的县立神山高中，古典部只有四名成员：节能主义者折木奉太郎、好奇心旺盛的千反田爱瑠、数据库福部里志、毒舌的伊原摩耶花。日常里藏着谜题——广播室的怪声、占卜游戏的作弊、文化祭的偷窃预告，以及一本旧杂志《冰菓》背后三十三年前的真相。",
   "language": "zh-CN",
@@ -10,6 +13,9 @@
   "starter_lorebook": [
     {
       "id": "hyouka_houtarou",
+      "visible_to": [
+        "*"
+      ],
       "name": "折木奉太郎",
       "type": "npc",
       "keywords": [
@@ -22,6 +28,9 @@
     },
     {
       "id": "hyouka_eru",
+      "visible_to": [
+        "*"
+      ],
       "name": "千反田爱瑠",
       "type": "npc",
       "keywords": [
@@ -34,6 +43,9 @@
     },
     {
       "id": "hyouka_satoshi",
+      "visible_to": [
+        "*"
+      ],
       "name": "福部里志",
       "type": "npc",
       "keywords": [
@@ -46,6 +58,9 @@
     },
     {
       "id": "hyouka_mayaka",
+      "visible_to": [
+        "*"
+      ],
       "name": "伊原摩耶花",
       "type": "npc",
       "keywords": [
@@ -58,6 +73,7 @@
     },
     {
       "id": "hyouka_fuyumi",
+      "visible_to": [],
       "name": "入须冬实",
       "type": "npc",
       "keywords": [
@@ -70,6 +86,7 @@
     },
     {
       "id": "hyouka_kahou",
+      "visible_to": [],
       "name": "十文字嘉保",
       "type": "npc",
       "keywords": [
@@ -82,6 +99,7 @@
     },
     {
       "id": "hyouka_mayu",
+      "visible_to": [],
       "name": "本乡真由",
       "type": "npc",
       "keywords": [
@@ -94,6 +112,9 @@
     },
     {
       "id": "hyouka_classics_room",
+      "visible_to": [
+        "*"
+      ],
       "name": "古典部室",
       "type": "location",
       "keywords": [
@@ -106,6 +127,9 @@
     },
     {
       "id": "hyouka_broadcast",
+      "visible_to": [
+        "*"
+      ],
       "name": "广播室",
       "type": "location",
       "keywords": [
@@ -118,6 +142,9 @@
     },
     {
       "id": "hyouka_cooking",
+      "visible_to": [
+        "*"
+      ],
       "name": "料理实习室",
       "type": "location",
       "keywords": [
@@ -130,6 +157,7 @@
     },
     {
       "id": "hyouka_storage",
+      "visible_to": [],
       "name": "旧杂志库房",
       "type": "location",
       "keywords": [
@@ -142,6 +170,9 @@
     },
     {
       "id": "hyouka_festival",
+      "visible_to": [
+        "*"
+      ],
       "name": "文化祭摊位区",
       "type": "location",
       "keywords": [
@@ -154,6 +185,9 @@
     },
     {
       "id": "hyouka_library",
+      "visible_to": [
+        "*"
+      ],
       "name": "图书馆",
       "type": "location",
       "keywords": [
@@ -166,6 +200,7 @@
     },
     {
       "id": "hyouka_event_broadcast",
+      "visible_to": [],
       "name": "广播室怪声事件",
       "type": "event",
       "keywords": [
@@ -178,6 +213,7 @@
     },
     {
       "id": "hyouka_event_divination",
+      "visible_to": [],
       "name": "占卜游戏作弊",
       "type": "event",
       "keywords": [
@@ -190,6 +226,7 @@
     },
     {
       "id": "hyouka_event_tenmonji",
+      "visible_to": [],
       "name": "十文字偷窃预告",
       "type": "event",
       "keywords": [
@@ -202,6 +239,7 @@
     },
     {
       "id": "hyouka_event_movie",
+      "visible_to": [],
       "name": "预言剧本事件",
       "type": "event",
       "keywords": [
@@ -214,6 +252,7 @@
     },
     {
       "id": "hyouka_main_icecream",
+      "visible_to": [],
       "name": "杂志《冰菓》的由来",
       "type": "event",
       "keywords": [
@@ -226,6 +265,7 @@
     },
     {
       "id": "hyouka_main_33years",
+      "visible_to": [],
       "name": "三十三年前的事件",
       "type": "event",
       "keywords": [
@@ -238,6 +278,9 @@
     },
     {
       "id": "hyouka_atmosphere",
+      "visible_to": [
+        "*"
+      ],
       "name": "节能与好奇",
       "type": "other",
       "keywords": [
